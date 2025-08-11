@@ -7,3 +7,6 @@
 # Dica: Considere a utilização de um set para simplificar a lógica de remoção de duplicatas de forma eficiente.
 
 words: list[int] = ['a', 'b', 'c', 'a', 'd', 'b']
+
+
+print(set(words))

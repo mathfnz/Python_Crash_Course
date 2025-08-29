@@ -112,3 +112,24 @@ still_invite = [print(f"But you guys still on the list, right?! {guest}") for gu
 bigger_table_list: list = [print(f"{guest} guess what! I just find a bigger table!") for guest in guests]
 guests.insert(0, 'Sócrates')
 print(guests)
+
+# %%
+# 3.8
+places_around_world: list[str] = ['Madrid', 'Lucaynena de Las Torres', 'Arenas del Rey', 'Braga', 'Pernambuco']
+print(places_around_world)
+print(sorted(places_around_world))
+print(places_around_world)
+print(sorted(places_around_world, reverse=True))
+print(places_around_world)
+places_around_world.sort()
+print(places_around_world)
+places_around_world.reverse()
+print(places_around_world)
+places_around_world.sort(reverse=False)
+print(places_around_world)
+
+
+# %%
+# # 3.9
+guests: list[str] = ['Michelangelo', 'Iolanda', 'Kuhn']
+print(len(guests))

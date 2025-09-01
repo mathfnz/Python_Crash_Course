@@ -125,5 +125,60 @@ for alien in range(30):
 print(aliens)
 print("----")
 
+for alien in aliens[:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+    
 for alien in aliens[:5]:
     print(alien)
+# %%
+
+my_pizza: dict = {
+    'crust': 'thick',
+    'toppings': ['mushrooms', 'extra chesse'],
+}
+
+print(my_pizza)
+print(my_pizza['crust'])
+for topping in my_pizza['toppings']:
+    print(f"{topping}")
+    
+# %%
+favorite_languages = {
+    'jen': ['python', 'rust'],
+    'sarah': ['c'],
+    'edward': ['rust', 'go'],
+    'phil': ['python', 'haskell'],
+}
+
+for name, languages in favorite_languages.items():
+    print(f"\n{name.title()} favorite language:")
+    for language in languages:
+        print(f"{language}")
+        
+# %% 
+# 6.7
+favorite_person: dict = {
+    'first_name': 'Matheus',
+    'last_name': 'Fernandes',
+    'city': 'Sao Paulo'
+}
+second_favorite_person: dict = {
+    'first_name': 'Me',
+    'last_name': 'Myself',
+    'city': 'And I'
+}
+last_favorte_person: dict = {
+    'first_name': 'You',
+    'last_name': 'voce',
+    'city': 'sua mente'
+}
+people: list = []
+print(people)
+people.append(favorite_person)
+print(people)
+people.append(second_favorite_person)
+print(people)
+people.append(last_favorte_person)

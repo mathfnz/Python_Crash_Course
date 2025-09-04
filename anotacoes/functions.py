@@ -28,12 +28,12 @@ def make_shirt(size: int, message: str):
     print(f"My size is {size} and I would like a message as {message}")
 make_shirt(size=10, message="I love WoW")
 # %%
-def get_formatted_name(first_name: str, last_name: str) -> str:
+def get_formatted_name_with_types(first_name: str, last_name: str) -> str:
     '''Return a full name, neatly formated'''
     full_name = (f"{first_name} {last_name}")
     return full_name.title()
 
-musician = get_formatted_name(first_name='jimi', last_name='hendrix')
+musician = get_formatted_name_with_types(first_name='jimi', last_name='hendrix')
 print(musician)
 
 #%%

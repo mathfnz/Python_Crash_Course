@@ -80,4 +80,5 @@ while True:
         break
     print(f"{city_name}, {country_name}")
 
-# 
+# %%
+# 8.7

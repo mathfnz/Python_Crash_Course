@@ -53,11 +53,31 @@ def get_formatted_name(first_name, last_name):
     full_name = f"{first_name} {last_name}"
     return full_name.title()
 # This is an infinite loop!
-while True:
-    print("\nPlease tell me your name:")
-    f_name = input("First name: ")
-    l_name = input("Last name: ")
-    formatted_name = get_formatted_name(f_name, l_name)
-    print(f"\nHello, {formatted_name}!")
+# while True:
+#     print("\nPlease tell me your name:")
+#     f_name = input("First name: ")
+#     l_name = input("Last name: ")
+#     formatted_name = get_formatted_name(f_name, l_name)
+#     print(f"\nHello, {formatted_name}!")
 # %%
 # 8.6
+def city_names(city: str, country: str) -> dict[str, str]:
+    '''function to print a city and country'''
+    travel: dict[str, str] = {
+        'city': city,
+        'country': country
+    } 
+    return travel
+    
+
+while True:
+    city_name = input("Tell me your favorite city: ")
+    country_name = input("Tell me which country it is in: ")
+
+    city_country = city_names(city=city_name, country=country_name)
+    
+    if city_name == 'quit' or country_name == 'quit':
+        break
+    print(f"{city_name}, {country_name}")
+
+# 

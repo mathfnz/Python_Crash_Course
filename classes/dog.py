@@ -12,3 +12,4 @@ class Dog:
     def roll_over(self):
         """Simulate rolling over"""
         print(f"{self.name} rolled over")
+# %%

@@ -1,4 +1,5 @@
 # %%
+# 9.1
 class Restaurant():
     """Class representing a restaurant"""
     def __init__(self, restaurant_name, cuisine_type):
@@ -15,7 +16,7 @@ class Restaurant():
         """Print if the restaurant is open"""
         print("Is open!")
         
-# %%
+# %% 9.2
 restaurant = Restaurant("Mama mia caseta", "Italian food")
 print(f"{restaurant.restaurant_name}")
 print(f"{restaurant.cuisine_type}")
